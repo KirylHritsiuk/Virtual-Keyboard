@@ -1,0 +1,136 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #C4C4C4;
+}
+
+p {
+  margin: 0 auto;
+}
+
+.virtual-keyboard_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.05rem;
+  margin: 10px auto;
+}
+
+.textarea:focus {
+  -webkit-box-shadow: 0 0 40px rgba(24, 23, 23, 0.5);
+          box-shadow: 0 0 40px rgba(24, 23, 23, 0.5);
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background: #59617e;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
+  border: 2px solid #000000a6;
+  border-radius: 4px;
+}
+
+.keyboard--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.keyboard--key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5%;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  background: #fdfcf2;
+  outline: none;
+  cursor: pointer;
+  margin: 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 700;
+  color: #3b3a3a;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.keyboard--key:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background: #FDDCC4;
+}
+
+.keyboard--key:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.keyboard--key--wibe10 {
+  width: 10%;
+}
+
+.keyboard--key--wibe11 {
+  width: 11%;
+}
+
+.keyboard--key--wibe15 {
+  width: 15%;
+}
+
+.keyboard--key--space {
+  width: 39.7%;
+  max-width: 500px;
+}
+
+.noActive {
+  display: none;
+}
