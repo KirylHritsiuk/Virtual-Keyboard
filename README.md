@@ -1,2 +1,2 @@
-https://github.com/KirylHritsiuk/Virtual-Keyboard/
+https://github.com/KirylHritsiuk/Virtual-Keyboard/tree/gh-pages/dist/
 
